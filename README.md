@@ -88,6 +88,14 @@ Data visualization is the graphical representation of data using charts, graphs,
 6. **Large Sample Simulation:** We draw 10,000 samples of size 100 each and compute their means. The distribution of these sample means is visualized and shows a normal distribution.
 7. **Mean and Standard Deviation of Sample Means:** The mean of the sample means is close to the population mean, and the standard deviation of the sample means matches the expected standard deviation (population standard deviation divided by the square root of the sample size), validating the Central Limit Theorem.
 
+## Day 10
+### Medical Cost Prediction
+1. **Data Exploration:** Analyzed a medical cost dataset with 1338 entries, detailing attributes like age, gender, BMI, children, smoking status, region, and insurance charges.
+2. **Data Preparation:** Dropped irrelevant columns, encoded categorical data, and normalized numerical data for better model performance.
+3. **Building Models:** Implemented Multiple Linear Regression and Polynomial Regression models using Scikit-Learn.
+4. **Model Evaluation:** Used R Squared Score and RMSE to evaluate model performance on both training and testing datasets.
+5. **Results:** Compare the accuracy and errors of both models to determine which was more effective in predicting insurance charges.
+6. **Visualization:** Utilized heatmaps, histograms, and scatter plots to visualize data correlations and distributions.
 
 
 
