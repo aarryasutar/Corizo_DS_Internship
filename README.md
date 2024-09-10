@@ -84,7 +84,7 @@ Data visualization is the graphical representation of data using charts, graphs,
 2. **Population Distribution:** A histogram of the combined dataset shows the distribution of grades, reflecting the two distinct groups with means of 30 and 75, resulting in an overall mean of approximately 57.24 and a standard deviation of 24.55.
 3. **Sample Selection:** A sample of 100 students is taken from the dataset, and its mean score is calculated. This sample mean provides an estimate of the population mean.
 4. **Multiple Samples:** Five additional samples of 100 students each are taken to observe variability in sample means, illustrating how different samples can yield different means.
-5. **Central Limit Theorem:** With a large enough sample size, the distribution of sample means approximates a normal distribution, regardless of the original population distribution. The mean of these sample means should be close to the population mean, and the standard deviation should be the population standard deviation divided by the square root of the sample size.
+5. **Central Limit Theorem:** With a large enough sample size, the distribution of sample means it approximates a normal distribution, regardless of the original population distribution. The mean of these sample means should be close to the population mean, and the standard deviation should be the population standard deviation divided by the square root of the sample size.
 6. **Large Sample Simulation:** We draw 10,000 samples of size 100 each and compute their means. The distribution of these sample means is visualized and shows a normal distribution.
 7. **Mean and Standard Deviation of Sample Means:** The mean of the sample means is close to the population mean, and the standard deviation of the sample means matches the expected standard deviation (population standard deviation divided by the square root of the sample size), validating the Central Limit Theorem.
 
@@ -97,6 +97,27 @@ Data visualization is the graphical representation of data using charts, graphs,
 5. **Results:** Compare the accuracy and errors of both models to determine which was more effective in predicting insurance charges.
 6. **Visualization:** Utilized heatmaps, histograms, and scatter plots to visualize data correlations and distributions.
 
+## Day 11
+### Medical Cost Prediction (cont)
+1. **Data Loading and Exploration**: The dataset is loaded into a DataFrame, and its structure, including data types and summary statistics, is explored to understand its composition.
+2. **Data Cleaning**: Missing values are identified and handled appropriately. Columns with a high percentage of missing data are dropped, and the remaining missing values are imputed using mean or mode values, depending on the nature of the data.
+3. **Data Distribution and Outlier Analysis**: The distribution of features is visualized using histograms, and outliers are analyzed using box plots to identify any extreme values that might affect model performance.
+4. **Multicollinearity Check**: Correlation analysis is conducted to identify multicollinearity between features, ensuring that highly correlated features do not negatively impact the model.
+5. **Data Splitting**: The dataset is split into training and testing sets, with 80% used for training and 20% for testing, to evaluate model performance on unseen data.
+6. **Model Building and Training**: A Logistic Regression model is built and trained on the scaled training data, utilizing MinMaxScaler for feature scaling to improve model accuracy.
+7. **Model Evaluation**: The model's performance is evaluated using accuracy scores, confusion matrices, and classification reports, highlighting the effectiveness of the model on both training and testing datasets.
 
 
-
+## Day 12
+### Breast Cancer Prediction
+1. **Import Libraries**: Imported essential libraries like numpy, pandas, matplotlib.pyplot, and seaborn for data processing and visualization.
+2. **Suppress Warnings**: Used warnings.filterwarnings('ignore') to suppress warnings for a cleaner output.
+3. **Mount Google Drive**: Mounted Google Drive to access the dataset stored in it.
+4. **Load Dataset**: Loaded the dataset using pd.read_csv and displayed the first few rows with df.head().
+5. **Dataset Dimensions**: Checked the dimensions of the dataset using df.shape, revealing 699 instances and 11 attributes.
+6. **Column Renaming**: Renamed columns for better readability and understanding.
+7. **Drop Redundant Columns**: Dropped the ‘Id’ column as it was redundant and did not contribute to predictive power.
+8. **Dataset Summary**: Used df.info() to get a summary of the dataset, confirming the removal of the ‘Id’ column.
+9. **Data Type Conversion**: Converted the ‘Bare_Nuclei’ column from object to integer type using pd.to_numeric.
+10. **Missing Values**: Checked for missing values in the dataset using df.isnull().sum() and df.isna().sum(), identifying 16 missing values in the ‘Bare_Nuclei’ column.
+11. **Frequency Distribution**: Analyzed the frequency distribution of values in the ‘Bare_Nuclei’ column to understand its data better.
