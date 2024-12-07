@@ -128,13 +128,16 @@ Data visualization is the graphical representation of data using charts, graphs,
 1. **Import Libraries**: Essential libraries (`numpy`, `pandas`, `matplotlib`, `seaborn`, `scipy`) are imported.
 2. **Load Data**: Male and female datasets are loaded from Excel files (simulated here with random data).
 3. **Histograms**: Histograms are plotted for male and female weights to visualize their distributions.
-4. **Box-and-Whisker Plot**: A boxplot is created to compare the weight distributions of males and females.
-5. **Statistical Aggregates**: Basic statistics (mean, median, standard deviation, variance, skewness, kurtosis) are calculated for weights of males and females.
+4. **Box-and-Whisker Plot**: A box plot is created to compare the weight distributions of males and females.
+5. **Statistical Aggregates**: Basic statistics (mean, median, standard deviation, variance, skewness, kurtosis) are calculated for male and female weights.
 6. **Add BMI Column**: BMI is computed for females using their weights and heights and added as a new column to the dataset.
 7. **Standardization**: Female data is standardized (z-scores) for uniform scaling.
-8. **Scatterplot Matrix**: A scatterplot matrix is generated for selected standardized female attributes to explore pairwise relationships.
+8. **Scatterplot Matrix**: To explore pairwise relationships, a scatterplot matrix is generated for selected standardized female attributes.
 9. **Correlation Analysis**: Pearson's and Spearman's correlation coefficients are calculated for standardized female data to evaluate relationships between variables.
 10. **Waist-to-Ratio Calculations**: Waist-to-height and waist-to-hip ratios are computed for males and females.
 11. **Ratio Boxplots**: Boxplots for the computed ratios are drawn to compare distributions across groups.
 12. **Advantages and Disadvantages of Ratios**: Strengths and weaknesses of BMI, waist-to-height ratio, and waist-to-hip ratio are outlined.
-13. **Standardized BMI Extremes**: Standardized measurements for the 5 individuals with the lowest and highest BMIs in the female dataset are identified and printed. 
+13. **Standardized BMI Extremes**: Standardized measurements for the 5 individuals with the lowest and highest BMIs in the female dataset are identified and printed.
+
+
+
